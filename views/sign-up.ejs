@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Hi there</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/login-signup.css">
+
+</head>
+<body>
+      <!-- header part Start--------------------------------------------- -->
+
+
+    <div class="header" id="topheader" >
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+          <div class="container text-uppercase p-2" >
+            <a class="navbar-brand font-weight-bold text-white" href="/">CompanyName</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#servicediv">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#pricingdiv">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <% if(currentUser ){  %>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/logout"> Logout</a>
+                </li>
+              <% }else{  %>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/login">Login</a>
+              </li>
+               <% } %>
+
+
+              </ul>
+
+            </div>
+          </div>
+          </nav>
+
+
+
+
+</div>
+
+
+<!-- Contact Form----------------------------- -->
+
+<section class="form-section" id="contact-id" >
+  <div class="cotntainer headings text-center" >
+    <h1 class="text-center font-weight-bold" >Create An Account</h1>
+  </div>
+
+  <div class="container pt-3" >
+    <div class="row" >
+      <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1" >
+        <form action="\sign-up" method="POST">
+          <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name" name="name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter email" name="username" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
+          </div>
+
+          
+          <div class="d-flex justify-content-center" >
+            <button type="submit" class="form-btn btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="account-section" id="contact-id" >
+    <div class="account cotntainer headings text-center" >
+      <p>Already Have an Account?</p>
+      <a href="/login">Login</a>
+    </div>
+
+
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquwey.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

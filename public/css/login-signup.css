@@ -1,0 +1,54 @@
+.header{
+    height: 13vh;
+    background-size: cover;
+    clip-path: polygon(100% 0%,100% 77%, 0% 75%, 0 0);
+
+}
+
+.form-section{
+    padding-top: 10vh;
+}
+
+.form-control{
+    height: 45px;
+}
+
+.form-btn{
+    border: 2px solid #50c1d0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 1rem 3rem;
+    outline :none;
+    color: #50c1d0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    z-index: 2;
+    background: white;
+    box-shadow: 0px 5px 10px 0 rgba(128,128,128,0.8);
+}
+
+.form-btn:hover{
+    background: #50c1d0;
+    border: 1px solid #50c1d0;
+    color: white;
+    font-weight: bold;
+
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.account-section{
+    padding-top: 2rem;
+}
+
+.account-section a, .account-section p{
+    line-height: 1;
+    padding:0 5px;
+    font-size: 1.1rem;
+}
+
