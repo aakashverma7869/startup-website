@@ -100,7 +100,7 @@ var auth  = {
 var transporter = nodemailer.createTransport(mailgun(auth));
 
 
-app.get('/contact',isLoggedIn,function(req,res){
+app.get('/contact',function(req,res){
     res.render('contact');
 })
 
