@@ -65,7 +65,17 @@
     object-fit: cover;
 
 }
+.details a{
+    color: #222;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    transition: 0.2s ease;
+}
 
+.details a:hover{
+    font-size: 1.4rem;
+    color: #000;
+}
 
 
 .contain-img{
@@ -180,5 +190,13 @@
     .dynamic-services{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .container1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        
     }
 }

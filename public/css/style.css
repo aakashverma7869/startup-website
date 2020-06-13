@@ -166,7 +166,7 @@ header-section{
 
 .content{
     margin: auto;
-    width: 190px;
+    width: 200px;
     perspective: 1000px;
     position: relative;
     padding-top: 80px;
@@ -528,5 +528,27 @@ header-section{
     .nav-div{
         text-align: left;
         padding: 50px 0;
+    }
+
+    .aboutButton{
+        padding: 10px 30px;
+    }
+    .contactButton{
+        padding: 10px 25px;
+    }
+    
+
+
+}
+
+@media only screen and (max-width:850px){
+    .offers{
+        flex-direction: column;
+    }
+    .slideshow{
+        display:none;
+    }
+    .pricing{
+        margin-top: 0;
     }
 }
